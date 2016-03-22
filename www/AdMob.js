@@ -106,6 +106,12 @@ admobExport.prepareInterstitial = function(args, successCallback, failureCallbac
 admobExport.showInterstitial = function(successCallback, failureCallback) {
 	cordova.exec( successCallback, failureCallback, 'AdMob', 'showInterstitial', [] );
 };
+admobExport.createInterstitial = function(successCallback, failureCallback) {
+	cordova.exec( successCallback, failureCallback, 'AdMob', 'createInterstitial', [] );
+};
+admobExport.destroyInterstitial = function(successCallback, failureCallback) {
+	cordova.exec( successCallback, failureCallback, 'AdMob', 'destroyInterstitial', [] );
+};
 
 module.exports = admobExport;
 
